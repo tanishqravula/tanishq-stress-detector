@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 import streamlit as st
+df, X, y = load_data()
 @st.cache()
 def load_data():
     """This function returns the preprocessed data"""
@@ -82,7 +83,7 @@ st.sidebar.title("Navigation")
 page = st.sidebar.radio("Pages", list(Tabs.keys()))
 
 # Loading the dataset.
-df, X, y = load_data()
+
 
 # Call the app funciton of selected page to run
 if page in ["Prediction", "Visualisation"]:
