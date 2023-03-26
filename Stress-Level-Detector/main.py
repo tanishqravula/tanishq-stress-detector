@@ -8,6 +8,10 @@ from web_functions import load_data
 
 # Import pages
 from Tabs import home, data, predict, visualise
+import numpy as np
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+import streamlit as st
 
 # Configure the app
 st.set_page_config(
