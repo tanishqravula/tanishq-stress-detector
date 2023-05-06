@@ -5,6 +5,8 @@ import streamlit as st
 
 # Import necessary functions from web_functions
 from web_functions import predict
+import pandas as pd
+import numpy as np
 
 
 def app(df, X, y):
