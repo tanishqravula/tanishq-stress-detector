@@ -7,23 +7,7 @@ import streamlit as st
 from web_functions import predict
 import pandas as pd
 import numpy as np
-@st.cache()
-def load_data():
-    """This function returns the preprocessed data"""
-
-    # Load the Diabetes dataset into DataFrame.
-    df = pd.read_csv('Stress-Level-Detector/Stress.csv')
-
-    # Rename the column names in the DataFrame.
-    df.rename(columns = {"t": "bt",}, inplace = True)
-    
-    
-
-    # Perform feature and target split
-    X = df[["sr","rr","bt","lm","bo","rem","sh","hr"]]
-    y = df['sl']
-
-    return df, X, y
+from web_functions import load_data
 
 
 def app(df, X, y):
