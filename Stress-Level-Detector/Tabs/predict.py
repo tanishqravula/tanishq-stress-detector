@@ -10,7 +10,7 @@ import numpy as np
 from web_functions import load_data
 
 
-def app(df, X, y):
+def app(df, X, Y):
     """This function create the prediction page"""
 
     # Add title to the page
