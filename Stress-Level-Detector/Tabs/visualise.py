@@ -11,6 +11,7 @@ import streamlit as st
 
 # Import necessary functions from web_functions
 from web_functions import train_model
+from web_functions import load_data
 
 def app(df, X, y):
     """This function create the visualisation page"""
