@@ -13,7 +13,7 @@ import streamlit as st
 from web_functions import train_model
 from web_functions import load_data
 
-def app(df, X, y):
+def app(df, X, Y):
     """This function create the visualisation page"""
     
     # Remove the warnings
