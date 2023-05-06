@@ -40,7 +40,7 @@ df,X,Y=load_data()
 
 # Call the app funciton of selected page to run
 if page in ["Prediction", "Visualisation"]:
-    Tabs[page].app(df, X, y)
+    Tabs[page].app(df, X, Y)
 elif (page == "Data Info"):
     Tabs[page].app(df)
 else:
