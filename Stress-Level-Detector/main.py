@@ -8,6 +8,23 @@ from web_functions import load_data
 
 # Import pages
 from Tabs import home, data, predict, visualise
+@st.cache()
+def load_data():
+    """This function returns the preprocessed data"""
+
+    # Load the Diabetes dataset into DataFrame.
+    df = pd.read_csv('Stress.csv')
+
+    # Rename the column names in the DataFrame.
+    df.rename(columns = {"t": "bt",}, inplace = True)
+    
+    
+
+    # Perform feature and target split
+    X = df[["sr","rr","bt","lm","bo","rem","sh","hr"]]
+    y = df['sl']
+
+    return df, X, y
 
 # Configure the app
 st.set_page_config(
