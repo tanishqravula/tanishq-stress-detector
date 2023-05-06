@@ -5,6 +5,7 @@ import streamlit as st
 
 # Import necessary functions from web_functions
 from web_functions import load_data
+import pandas as pd
 
 # Import pages
 from Tabs import home, data, predict, visualise
