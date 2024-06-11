@@ -7,7 +7,7 @@ import streamlit as st
 def load_data():
     """This function returns the preprocessed data"""
     # Load the Stress dataset into DataFrame.
-    df = pd.read_csv('Stress.csv')
+    df = pd.read_csv('Stress-Level-Detector/Stress.csv')
 
     # Rename the column names in the DataFrame.
     df.rename(columns={"t": "bt"}, inplace=True)
